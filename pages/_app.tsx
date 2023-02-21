@@ -2,11 +2,11 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>Top</title>
+        <title>TopApp</title>
         <link rel='icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
@@ -18,5 +18,3 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     </>
   );
 }
-
-export default MyApp;

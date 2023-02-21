@@ -1,12 +1,14 @@
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 12px;
   cursor: pointer;
   text-align: center;
   border: none;
   border-radius: 5px;
   font-size: 14px;
+  max-height: 36px;
 
   transition: all ease 0.3s;
 }
@@ -29,4 +31,16 @@
 .outline:hover {
   background-color: var(--primary);
   color: var(--white);
+}
+
+.arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: all ease 0.3s ;
 }
