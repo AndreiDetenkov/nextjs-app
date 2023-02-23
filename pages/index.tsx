@@ -1,4 +1,4 @@
-import {AppearanceType, ArrowType, Button, Htag} from '../components';
+import {AppearanceType, ArrowType, Button, Htag, Paragraph} from '../components';
 
 export default function Home(): JSX.Element {
   return (
@@ -8,6 +8,8 @@ export default function Home(): JSX.Element {
         Button1
       </Button>
       <Button appearance={AppearanceType.outline} arrow={ArrowType.right}>Button2</Button>
+
+      <Paragraph>qwqwqw</Paragraph>
     </>
   );
 }
