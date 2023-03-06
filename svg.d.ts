@@ -11,10 +11,9 @@ declare module '*.png' {
 }
 
 declare module '*.svg' {
-  const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
-  export default ReactComponent;
+  const content = React.FC<React.SVGAttributes<SVGSVGElement>>;
+  export default content;
 }
-
 
 declare module '*.jpg' {
   const content: StaticImageData;

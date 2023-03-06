@@ -1,4 +1,4 @@
-import {AppearanceType, ArrowType, Button, Htag, Paragraph, Tag, TagColor, TagSize} from '../components';
+import {AppearanceType, ArrowType, Button, Htag, Paragraph, Rating, Tag, TagColor, TagSize} from '../components';
 
 export default function Home(): JSX.Element {
   return (
@@ -15,6 +15,8 @@ export default function Home(): JSX.Element {
       <Tag size={TagSize.medium} color={TagColor.red}>Red</Tag>
       <Tag size={TagSize.medium} color={TagColor.green}>Green</Tag>
       <Tag color={TagColor.primary}>Primary</Tag>
+
+      <Rating rating={4} />
     </>
   );
 }

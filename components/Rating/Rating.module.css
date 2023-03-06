@@ -1,0 +1,10 @@
+.filled {
+  fill: var(--primary);
+}
+
+.star {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
