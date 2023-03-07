@@ -2,6 +2,7 @@ import React, {DetailedHTMLProps, FunctionComponent, HTMLAttributes, ReactNode} 
 import {Sidebar} from "./Sidebar/Sidebar";
 import {Header} from "./Header/Header";
 import {Footer} from "./Footer/Footer";
+import styles from './Layout.module.css';
 
 interface LayoutProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   children: ReactNode
@@ -9,16 +10,14 @@ interface LayoutProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, 
 
 const Layout = ({children}: LayoutProps): JSX.Element => {
   return (
-    <>
-      <Header/>
-      <main>
-        <Sidebar/>
-        <div>
-          {children}
-        </div>
+    <div className={styles.wrapper}>
+      <Header className={styles.header}/>
+      <Sidebar className={styles.sidebar}/>
+      <main className={styles.main}>
+        {children}
       </main>
-      <Footer/>
-    </>
+      <Footer className={styles.footer}/>
+    </div>
   );
 };
 
